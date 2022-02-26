@@ -1,0 +1,18 @@
+.nav {
+  /* background-color: #d8d8d8;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; */
+}
+
+.active {
+  color: red;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.h1 {
+  color: red;
+}
