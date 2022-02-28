@@ -38,4 +38,9 @@
 
 ## Custom App
 
+- 템플릿 커스터마이즈
 - \_app.js
+
+## Fetching Data
+
+## Redirect and Rewrite
