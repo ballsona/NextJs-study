@@ -1,17 +1,33 @@
-import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
-type Props = {
-  title: String;
-  poster: String;
-};
+interface movieProps {
+  id: number;
+  title: string;
+  poster: string;
+}
 
-export default function Movie({ title, poster }: Props) {
+export default function Movie({ id, title, poster }: movieProps) {
+  const router = useRouter();
+  const onClick = (id: number) => {
+    router.push({
+      pathname: `/movies/${id}`,
+      query: {
+        id,
+        title,
+        poster,
+      },
+    });
+  };
   return (
     <>
-      <div className="movie-wrapper">
-        <img src={`https://image.tmdb.org/t/p/w500/${poster}`} alt="poster" />
+      <div className="movie-wrapper" onClick={() => onClick(id)}>
+        {/* <Link href={`/movies/${id}`} passHref> */}
+        <img src={`https://image.tmdb.org/t/p/w500${poster}`} alt="poster" />
         <div className="title">{title}</div>
+        {/* </Link> */}
       </div>
+
       <style jsx>{`
         .movie-wrapper {
           margin: 10px;

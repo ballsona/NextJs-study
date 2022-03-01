@@ -18,6 +18,10 @@ const nextConfig = {
       {
         source : "/api/movies",
         destination : `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`
+      },
+      {
+        source : "/api/movies/:id",
+        destination : `https://api.themoviedb.org/3/movie/:id?api_key=${API_KEY}`
       }
     ]
     // rewrites : source URL 를 입력하면 URL은 변하지 않으면서 destination로 이동.

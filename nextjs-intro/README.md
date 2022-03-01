@@ -1,5 +1,7 @@
 # NextJs-intro
 
+https://nomadcoders.co/nextjs-fundamentals/
+
 ---
 
 ## library vs Framework
@@ -44,3 +46,9 @@
 ## Fetching Data
 
 ## Redirect and Rewrite
+
+# getServerSideProps()
+
+## Dynamic Routes
+
+- []
