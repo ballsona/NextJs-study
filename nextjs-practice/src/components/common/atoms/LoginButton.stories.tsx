@@ -1,21 +1,19 @@
-// src/components/Task.stories.js
-
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import SampleButton from "./SampleButton";
+import { LoginButton } from "./LoginButton";
 
 export default {
-  component: SampleButton,
-  title: "SampleButton",
+  title: "atoms/LoginButton",
+  component: LoginButton,
   argTypes: {
     backgroundColor: { control: "color" },
     label: { defaultValue: "Button" },
   },
-} as ComponentMeta<typeof SampleButton>;
+} as ComponentMeta<typeof LoginButton>;
 
-const Template: ComponentStory<typeof SampleButton> = (args) => (
-  <SampleButton {...args} />
+const Template: ComponentStory<typeof LoginButton> = (args) => (
+  <LoginButton {...args} />
 );
 
 export const Kakao = Template.bind({});

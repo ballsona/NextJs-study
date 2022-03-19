@@ -1,4 +1,7 @@
-.storybookButton {
+/** @jsxImportSource @emotion/react */
+import { jsx, css } from "@emotion/react";
+
+const storybookButton = css`
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   border: 0;
@@ -6,25 +9,35 @@
   cursor: pointer;
   display: inline-block;
   line-height: 1;
-}
-.storybookButtonPrimary {
+`;
+const storybookButtonPrimary = css`
   color: white;
   background-color: #1ea7fd;
-}
-.storybookButtonSecondary {
+`;
+const storybookButtonSecondary = css`
   color: #333;
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-}
-.storybookButtonSmall {
+`;
+
+const storybookButtonSmall = css`
   font-size: 12px;
   padding: 10px 16px;
-}
-.storybookButtonMedium {
+`;
+const storybookButtonMedium = css`
   font-size: 14px;
   padding: 11px 20px;
-}
-.storybookButtonLarge {
+`;
+const storybookButtonLarge = css`
   font-size: 16px;
   padding: 12px 24px;
-}
+`;
+
+export {
+  storybookButton,
+  storybookButtonPrimary,
+  storybookButtonSecondary,
+  storybookButtonSmall,
+  storybookButtonMedium,
+  storybookButtonLarge,
+};
